@@ -1,5 +1,8 @@
 import { Request } from "express";
+import { SelectUserType } from "../../models/user";
 
 declare module "express-serve-static-core" {
-  interface Request {}
+  interface Request {
+    user: SelectUserType;
+  }
 }

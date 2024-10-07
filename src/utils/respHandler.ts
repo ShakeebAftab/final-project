@@ -41,7 +41,7 @@ type RespType = {
   req?: Request;
   res: Response;
   data: any;
-  status: 200 | 201 | 400 | 401 | 403 | 500;
+  status: 200 | 201 | 404 | 401 | 400 | 403 | 500;
 };
 
 export const respHandler = ({ res, data, status }: RespType) =>

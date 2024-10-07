@@ -13,9 +13,5 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=mydatabase
 
-  redis:
-    image: redis:latest
-    container_name: redis_db
-
 volumes:
   pgdata:
